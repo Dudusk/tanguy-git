@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { GnePage } from './gne';
+import { CameraPage } from './camera';
 
 @NgModule({
   declarations: [
-    GnePage,
+    CameraPage,
   ],
   imports: [
-    IonicPageModule.forChild(GnePage),
+    IonicPageModule.forChild(CameraPage),
   ],
 })
-export class GnePageModule {}
+export class CameraPageModule {}
