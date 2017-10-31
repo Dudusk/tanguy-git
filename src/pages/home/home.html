@@ -8,11 +8,30 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <u>Titre principal :</u>
+  <h1>{{title}}</h1>
+  <hr>
+  <u>Le AppData</u> : <br />
+  {{app.nom}} / v.{{app.version}}
+  <hr >
+<!-- 
+Avec [] on affiche 
+Avec [()] on récupère 
+-->
+  
+<h2>Modification : </h2>
+  <ion-item>
+    Titre princapal : <br />
+    <ion-input type="title" placeholder="Title" [(ngModel)]="title"></ion-input>
+  </ion-item>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-item>
+    AppData : <br />
+    <ion-input type="version" placeholder="Titre" [(ngModel)]="app.version"></ion-input>
+    <ion-input type="nom" placeholder="Titre" [(ngModel)]="app.nom"></ion-input>
+  </ion-item>
+
+  <button ion-button secondary (tap)="test()">Bouton</button>
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>
